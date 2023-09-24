@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+      <head>
+	        <title>File</title>
+			<style>
+			body{
+			    background-color:#e2d4ba;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				height:100vh;
+			}
+			.game{
+			    background-color:#ccc7b9;
+				border-radius:10px;
+				padding:20px;
+				width:600px;
+			}   
+			.game img{
+			    width:30%;
+				margin-right:10px;
+				cursor:pointer;
+			}
+			</style>
+	  </head>
+	  <body>
+	        <div class="game">
+			    <div class="result">
+				    <h3 class="pCount">Player:0</h3>
+				    <h3 class="cCount">Computer:0</h3>
+				</div>
+			    <div class="choice">
+				    <img src="https://www.vhv.rs/dpng/d/535-5351099_rock-paper-scissors-rock-paper-scissors-icons-png.png" onclick="play('paper')">
+					<img src="https://images-ext-2.discordapp.net/external/kMkYQMEYwGtRbT0kuausmvYd5ejaKFxoqGhbX84l6Tg/https/toppng.com/uploads/preview/rock-paper-scissors-circle-11562962494dqcjusyikw.png?width=640&height=655" onclick="play('rock')">
+					<img src="https://yvana.org/games/games-images/rock-paper-scissor/scissors.png" onclick="play('scissors')">
+				</div>
+				<div class="players">
+				    <p class="player">Players choice:</p>
+				    <p class="computer">Computers choice:</p>
+				    <p class="winner"></p>
+				</div>
+			</div>
+			<script src="app.js"></script>
+	  </body>
+</html>
